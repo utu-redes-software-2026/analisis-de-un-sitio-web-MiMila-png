@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NovaWeb | Contacto</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                Nova<span>Web</span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="menu" id="menu">
+
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="nosotros.html">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="servicios.html">
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html" class="activo">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero-interno">
+
+            <span>
+                HABLEMOS
+            </span>
+
+            <h1>
+                Contacto
+            </h1>
+
+            <p>
+                Contanos qué proyecto tenés en mente.
+            </p>
+
+        </section>
+
+
+        <section class="seccion">
+
+            <div class="contacto">
+
+                <!-- INFORMACIÓN -->
+
+                <div class="contacto-info">
+
+                    <span class="etiqueta">
+                        PONETE EN CONTACTO
+                    </span>
+
+                    <h2>
+                        Estamos para ayudarte
+                    </h2>
+
+                    <p>
+                        Completá el formulario y nos pondremos
+                        en contacto contigo.
+                    </p>
+
+                    <div class="dato">
+
+                        <strong>
+                            Email
+                        </strong>
+
+                        <span>
+                            info@novaweb.com
+                        </span>
+
+                    </div>
+
+
+                    <div class="dato">
+
+                        <strong>
+                            Teléfono
+                        </strong>
+
+                        <span>
+                            +598 99 123 456
+                        </span>
+
+                    </div>
+
+
+                    <div class="dato">
+
+                        <strong>
+                            Ubicación
+                        </strong>
+
+                        <span>
+                            Durazno, Uruguay
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+
+                <form id="formContacto"
+                      class="formulario">
+
+                    <div class="campo">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="tu@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            placeholder="Contanos sobre tu proyecto..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-principal">
+                        Enviar mensaje
+                    </button>
+
+
+                    <p
+                        id="mensajeFormulario"
+                        class="mensaje-formulario">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="copyright">
+
+            <p>
+                © 2026 NovaWeb.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
