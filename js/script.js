@@ -72,3 +72,17 @@ if (formulario) {
     });
 
 }
+
+function myFunction() {
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+
+    const btn = document.querySelector(".navbar button");
+    if (btn) {
+        if (body.classList.contains("dark-mode")) {
+            btn.textContent = "☀️ Modo claro";
+        } else {
+            btn.textContent = "🌙 Modo oscuro";
+        }
+    }
+}
