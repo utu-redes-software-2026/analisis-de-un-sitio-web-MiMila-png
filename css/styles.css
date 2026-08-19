@@ -656,6 +656,7 @@ a {
     outline: none;
 
     transition: 0.3s;
+    background-color: #c2dfce77;
 }
 
 
@@ -664,7 +665,7 @@ a {
     border-color: var(--primario);
 
     box-shadow:
-        0 0 0 3px rgba(99, 91, 255, 0.1);
+        0 0 0 3px rgba(91, 255, 151, 0.1);
 }
 
 
@@ -770,7 +771,7 @@ a {
 
         width: 100%;
 
-        background: white;
+        background: rgb(135 196 148 / 25%);
 
         display: none;
 
@@ -780,6 +781,14 @@ a {
 
         border-bottom: 1px solid var(--borde);
     }
+
+    .menu a {
+        color: #3e5244;
+    }
+
+    .menu a.activo {
+    color: #42cc27ed;
+}
 
 
     .menu.mostrar {
@@ -949,3 +958,4 @@ body.dark-mode .btn-blanco{
 navbar.dark-mode {
     background-color: #159a8f;
 }
+

@@ -73,16 +73,33 @@ if (formulario) {
 
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const modoGuardado = localStorage.getItem("modoOscuro");
+    
+    // Si la preferencia guardada es "activo", aplicamos la clase al body
+    if (modoGuardado === "activo") {
+        document.body.classList.add("dark-mode");
+        actualizarTextoBoton(true);
+    }
+});
+
 function myFunction() {
     const body = document.body;
     body.classList.toggle("dark-mode");
 
+    // Guardar o eliminar la preferencia según el estado actual
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("modoOscuro", "activo");
+        actualizarTextoBoton(true);
+    } else {
+        localStorage.setItem("modoOscuro", "desactivado");
+        actualizarTextoBoton(false);
+    }
+}
+
+function actualizarTextoBoton(esOscuro) {
     const btn = document.querySelector(".navbar button");
     if (btn) {
-        if (body.classList.contains("dark-mode")) {
-            btn.textContent = "☀️ Modo claro";
-        } else {
-            btn.textContent = "🌙 Modo oscuro";
-        }
+        btn.textContent = esOscuro ? "☀️ Modo claro" : "🌙 Modo oscuro";
     }
 }
