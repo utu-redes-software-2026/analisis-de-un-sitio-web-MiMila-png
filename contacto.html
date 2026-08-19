@@ -8,10 +8,11 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>NovaWeb | Contacto</title>
+    <title>Pam (❁´◡`❁) Shop | Contacto</title>
 
     <link rel="stylesheet"
           href="css/styles.css">
+    <link rel="icon" type="image/webp" href="assets/favicon.webp">
 
 </head>
 
@@ -23,7 +24,7 @@
         <nav class="navbar">
 
             <a href="index.html" class="logo">
-                Nova<span>Web</span>
+                Pam<span>Shop</span>
             </a>
 
             <button class="menu-btn" id="menuBtn">
@@ -40,19 +41,25 @@
 
                 <li>
                     <a href="nosotros.html">
-                        Nosotros
+                        Sobre mí
                     </a>
                 </li>
 
                 <li>
                     <a href="servicios.html">
-                        Servicios
+                        Comisiones
                     </a>
                 </li>
 
                 <li>
                     <a href="contacto.html" class="activo">
                         Contacto
+                    </a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html">
+                        Portfolio
                     </a>
                 </li>
 
@@ -68,7 +75,7 @@
         <section class="hero-interno">
 
             <span>
-                HABLEMOS
+                ¡PIDE TU COMISIÓN!
             </span>
 
             <h1>
@@ -76,7 +83,7 @@
             </h1>
 
             <p>
-                Contanos qué proyecto tenés en mente.
+                Cuéntame tu idea o personaje para comenzar a trabajar en tu ilustración.
             </p>
 
         </section>
@@ -91,16 +98,15 @@
                 <div class="contacto-info">
 
                     <span class="etiqueta">
-                        PONETE EN CONTACTO
+                        PONTE EN CONTACTO
                     </span>
 
                     <h2>
-                        Estamos para ayudarte
+                        Estoy para ayudarte
                     </h2>
 
                     <p>
-                        Completá el formulario y nos pondremos
-                        en contacto contigo.
+                        Completa el formulario adjuntando los detalles de tu pedido y me pondré en contacto contigo lo antes posible.
                     </p>
 
                     <div class="dato">
@@ -110,7 +116,7 @@
                         </strong>
 
                         <span>
-                            info@novaweb.com
+                            contacto@pamshop.com
                         </span>
 
                     </div>
@@ -119,11 +125,12 @@
                     <div class="dato">
 
                         <strong>
-                            Teléfono
+                            Redes / Discord
                         </strong>
 
                         <span>
-                            +598 99 123 456
+                            @panpan. (DS) <br>
+                            @THK3u (IG)
                         </span>
 
                     </div>
@@ -152,14 +159,14 @@
                     <div class="campo">
 
                         <label for="nombre">
-                            Nombre
+                            Nombre / User
                         </label>
 
                         <input
                             type="text"
                             id="nombre"
                             name="nombre"
-                            placeholder="Tu nombre"
+                            placeholder="Tu nombre o red social"
                             required
                         >
 
@@ -185,15 +192,34 @@
 
                     <div class="campo">
 
+                        <label for="tipoComision">
+                            Tipo de comisión
+                        </label>
+
+                        <select id="tipoComision" name="tipoComision" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="headshot">Headshot / Icon</option>
+                            <option value="halfbody">Halfbody / Bust-up</option>
+                            <option value="fullbody">Fullbody</option>
+                            <option value="chibi">Chibi / Emotes</option>
+                            <option value="boceto">Boceto / Lineart</option>
+                            <option value="otro">Otro / Consulta general</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo">
+
                         <label for="mensaje">
-                            Mensaje
+                            Detalles del pedido
                         </label>
 
                         <textarea
                             id="mensaje"
                             name="mensaje"
                             rows="6"
-                            placeholder="Contanos sobre tu proyecto..."
+                            placeholder="Describe a tu personaje, pose, expresiones, referencias o cualquier detalle importante..."
                             required
                         ></textarea>
 
@@ -203,7 +229,7 @@
                     <button
                         type="submit"
                         class="btn btn-principal">
-                        Enviar mensaje
+                        Enviar solicitud
                     </button>
 
 
@@ -226,7 +252,7 @@
         <div class="copyright">
 
             <p>
-                © 2026 NovaWeb.
+                © 2026 PamShop. Todos los derechos reservados.
             </p>
 
         </div>
